@@ -1,5 +1,5 @@
 song=" ";
-function preload(){
+function preLoad(){
     song=loadSound("music.mp3");
 }
 scoreRightWrist=0;
@@ -21,7 +21,7 @@ function modelLoaded(){
     console.log("posenet is initialized")
 }
 
-function gotPoses(gotResults){
+function gotPoses(results){
     if(results.length>0)
     {
        scoreRightWrist=results[0].pose.keypoints[10].score;
